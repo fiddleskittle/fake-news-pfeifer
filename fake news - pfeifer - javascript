@@ -1,0 +1,9 @@
+nodes = document.querySelectorAll('p, h1, h2, h3, h4, li, a')
+
+for (var i = 0; i < nodes.length; i++) {
+//console.log ('i = ', nodes[i].innerText);
+if (nodes[i].innerText.includes('Trump')) {
+console.log(nodes[i].innerText);
+nodes[i].innerText = nodes[i].innerText.replace('Trump', 'Goat-faced narcissist');
+    }else {console.log('here')}
+}
